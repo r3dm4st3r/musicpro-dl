@@ -44,6 +44,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.1",
+    "react-haiku": "^2.0.3",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.3",
     "vite-plugin-eslint": "^1.8.1",

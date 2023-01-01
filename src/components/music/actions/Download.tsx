@@ -1,5 +1,6 @@
-import { Icon } from '@iconify/react';
 import PropTypes from 'prop-types';
+import { Icon } from '@iconify/react';
+import { useClickOutside } from 'react-haiku';
 import { useRef, useState } from 'react';
 import { downloadFile } from '../../../utils/global';
 
@@ -20,11 +21,11 @@ const Download = props => {
     setFile(null);
   };
 
-  // useClickAway(downloadEl, event => {
-  //   event.preventDefault();
-  //   setShow(false);
-  //   setFile(null);
-  // });
+  useClickOutside(downloadEl, event => {
+    event.preventDefault();
+    setShow(false);
+    setFile(null);
+  });
 
   return (
     <div className="relative" ref={downloadEl}>
