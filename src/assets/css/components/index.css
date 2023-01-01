@@ -1,0 +1,9 @@
+@import "./forms/input.css";
+@import "./forms/radio.css";
+
+
+@layer components {
+    .body {
+        @apply relative w-full bg-cyan-50 scroll-smooth;
+    }
+}
